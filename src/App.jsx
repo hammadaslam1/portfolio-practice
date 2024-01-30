@@ -1,11 +1,10 @@
 import "./App.css";
+import Navigations from "./router/Navigations";
 
 
 function App() {
   return (
-    <div className="App">
-      React App
-    </div>
+    <Navigations />
   );
 }
 
