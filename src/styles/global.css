@@ -1,7 +1,7 @@
-/* navigations */ /* navigations */ /* navigations */ /* navigations */
-/* navigations */ /* navigations */ /* navigations */ /* navigations */
-/* navigations */ /* navigations */ /* navigations */ /* navigations */
-/* navigations */ /* navigations */ /* navigations */ /* navigations */
+/*navigationsnavigationsnavigationsnavigations */
+/*navigationsnavigationsnavigationsnavigations */
+/*navigationsnavigationsnavigationsnavigations */
+/*navigationsnavigationsnavigationsnavigations */
 
 .navigations {
     min-height: 100vh;
@@ -12,26 +12,26 @@
     font-family: 'Dosis';
 }
 
-h1{
+h1 {
     font-size: 32pt;
     color: #112d4e;
 }
 
-p{
+p {
     font-size: 18pt;
     color: rgb(54, 54, 54);
 }
 
-.highlight{
+.highlight {
     color: #112d4e;
     font-weight: 800;
 }
 
 
-/* navbar */ /* navbar */ /* navbar */ /* navbar */
-/* navbar */ /* navbar */ /* navbar */ /* navbar */
-/* navbar */ /* navbar */ /* navbar */ /* navbar */
-/* navbar */ /* navbar */ /* navbar */ /* navbar */
+/*navbarnavbarnavbarnavbar */
+/*navbarnavbarnavbarnavbar */
+/*navbarnavbarnavbarnavbar */
+/*navbarnavbarnavbarnavbar */
 
 .appbar {
     background-color: #112d4e;
@@ -47,10 +47,10 @@ p{
 }
 
 
-/* footer */ /* footer */ /* footer */ /* footer */
-/* footer */ /* footer */ /* footer */ /* footer */
-/* footer */ /* footer */ /* footer */ /* footer */
-/* footer */ /* footer */ /* footer */ /* footer */
+/*footerfooterfooterfooter */
+/*footerfooterfooterfooter */
+/*footerfooterfooterfooter */
+/*footerfooterfooterfooter */
 
 .footer {
     background-color: #112d4e;
@@ -60,39 +60,35 @@ p{
     align-items: center;
     padding-left: 40px;
     padding-right: 20px;
-    /* position: sticky; */
-    /* bottom: 0; */
+    /*position: sticky; */
+    /*bottom: 0; */
     color: #fff;
 }
 
 
-/* home */ /* home */ /* home */ /* home */
-/* home */ /* home */ /* home */ /* home */
-/* home */ /* home */ /* home */ /* home */
-/* home */ /* home */ /* home */ /* home */
+/*homehomehomehome */
+/*homehomehomehome */
+/*homehomehomehome */
+/*homehomehomehome */
 
 
-.home{
-
-}
+.home {}
 
 
-/* skills */ /* skills */ /* skills */ /* skills */
-/* skills */ /* skills */ /* skills */ /* skills */
-/* skills */ /* skills */ /* skills */ /* skills */
-/* skills */ /* skills */ /* skills */ /* skills */
+/*skillsskillsskillsskills */
+/*skillsskillsskillsskills */
+/*skillsskillsskillsskills */
+/*skillsskillsskillsskills */
 
-.skills{
-
-}
+.skills {}
 
 
-/* projects */ /* projects */ /* projects */ /* projects */
-/* projects */ /* projects */ /* projects */ /* projects */
-/* projects */ /* projects */ /* projects */ /* projects */
-/* projects */ /* projects */ /* projects */ /* projects */
+/*projectsprojectsprojectsprojects */
+/*projectsprojectsprojectsprojects */
+/*projectsprojectsprojectsprojects */
+/*projectsprojectsprojectsprojects */
 
-.projects{
+.projects {
     padding: 40px;
     margin: 10px;
     display: flex;
@@ -100,11 +96,52 @@ p{
     align-items: center;
 }
 
-/* about us */ /* about us */ /* about us */ /* about us */
-/* about us */ /* about us */ /* about us */ /* about us */
-/* about us */ /* about us */ /* about us */ /* about us */
-/* about us */ /* about us */ /* about us */ /* about us */
-/* about us */ /* about us */ /* about us */ /* about us */
+.projectItem {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 45px 5px;
+}
+
+.item {
+    max-width: 280px;
+    background-color: azure;
+    margin: 10px;
+}
+
+.title {
+    background-color: #112d4e;
+    color: #fff;
+}
+
+.description{
+    background-color: aqua;
+}
+
+.live{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #112d4e;
+    margin: 30px;
+}
+.live:hover{
+    background-color: #112d4e;
+    color: #fff;
+}
+
+.language {
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #112d4e;
+}
+
+/*about usabout usabout usabout us */
+/*about usabout usabout usabout us */
+/*about usabout usabout usabout us */
+/*about usabout usabout usabout us */
+/*about usabout usabout usabout us */
 
 .about {
     padding: 40px;
@@ -114,17 +151,17 @@ p{
     align-items: center;
 }
 
-.aboutPara{
+.aboutPara {
     max-width: 800px;
     text-align: justify;
     font-weight: 600;
 }
 
-/* contact */ /* contact */ /* contact */ /* contact */
-/* contact */ /* contact */ /* contact */ /* contact */
-/* contact */ /* contact */ /* contact */ /* contact */
-/* contact */ /* contact */ /* contact */ /* contact */
-/* contact */ /* contact */ /* contact */ /* contact */
+/*contactcontactcontactcontact */
+/*contactcontactcontactcontact */
+/*contactcontactcontactcontact */
+/*contactcontactcontactcontact */
+/*contactcontactcontactcontact */
 h2 {
     color: #fff;
     cursor: pointer;
@@ -158,7 +195,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     background-color: #112d4e22;
-    /* border: 2px solid #112d4e; */
+    /*border: 2px solid #112d4e; */
     box-shadow: 0 1px 10px 1px #112d4e;
 }
 
@@ -187,13 +224,13 @@ a {
 .card:hover {
     border: 2px solid #112d4e;
     background-color: #112d4e99;
-    /* height: 120px; */
+    /*height: 120px; */
 
     .anchor {
         color: #112d4e;
         padding: 8px;
         background-color: #fff;
-        /* border: 3px solid #fff; */
+        /*border: 3px solid #fff; */
     }
 
     .anchor:hover {
