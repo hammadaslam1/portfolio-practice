@@ -1,18 +1,26 @@
+import BookCard from "../components/cards/BookCard";
+import opiniomine01 from "../components/assets/projectImages/opiniomine.png";
+import opiniomine02 from "../components/assets/projectImages/opiniomine02.png";
+import scorepulse01 from "../components/assets/projectImages/icon_lite.png";
+import scorepulse02 from "../components/assets/projectImages/scorepulse02.jpg";
+import scorepulse03 from "../components/assets/projectImages/scorepulse03.jpg";
+
 /* eslint-disable react/jsx-no-target-blank */
 const Projects = () => {
-  const createRows = (title, description, buttons, languages, link) => {
-    return { title, description, buttons, languages, link };
+  const createRows = (title, description, buttons, languages, link, image) => {
+    return { title, description, buttons, languages, link, image };
   };
   const projectsRow = [
     createRows(
-      "Reviews Classifier",
+      "OpinioMine",
       "A system that analyzes the customer reviews and classify them on the basis of fakeness, sentiments, topics and context (Not completed yet)",
       ["GitHub"],
       ["Python", "Flask", "JavaScript", "React JS"],
       [
         "https://github.com/hammadaslam1/reviews-classifier",
         // "https://mha-dz-social-club.web.app/",
-      ]
+      ],
+      [opiniomine01, opiniomine02]
     ),
     createRows(
       "Score Pulse",
@@ -22,7 +30,8 @@ const Projects = () => {
       [
         "https://github.com/hammadaslam1/score-pulse",
         // "https://mha-dz-social-club.web.app/",
-      ]
+      ],
+      [scorepulse01, scorepulse02, scorepulse03]
     ),
     createRows(
       "00 Social Club",
@@ -32,7 +41,8 @@ const Projects = () => {
       [
         "https://github.com/hammadaslam1/00-Social-Club-UI",
         "https://mha-dz-social-club.web.app/",
-      ]
+      ],
+      []
     ),
     createRows(
       "Blogs Website",
@@ -42,7 +52,8 @@ const Projects = () => {
       [
         "https://github.com/hammadaslam1/mha-blogs",
         "https://blogging-website-mha.web.app",
-      ]
+      ],
+      []
     ),
     createRows(
       "To-Do App",
@@ -52,7 +63,8 @@ const Projects = () => {
       [
         "https://github.com/hammadaslam1/to-do-React-js",
         "https://todo-app-reactjsx.web.app",
-      ]
+      ],
+      []
     ),
     createRows(
       "MHA's Swift Swap",
@@ -62,7 +74,8 @@ const Projects = () => {
       [
         "https://github.com/hammadaslam1/mha-s-swift-swap",
         "https://mha-s-swift-swap.web.app",
-      ]
+      ],
+      []
     ),
     createRows(
       "To-Do App",
@@ -72,7 +85,8 @@ const Projects = () => {
       [
         "https://github.com/hammadaslam1/to-do-firebase",
         "https://todo-hammad.web.app",
-      ]
+      ],
+      []
     ),
     createRows(
       "Simple Calculator",
@@ -82,7 +96,8 @@ const Projects = () => {
       [
         "https://github.com/hammadaslam1/calculator",
         "https://mha-calculator.web.app",
-      ]
+      ],
+      []
     ),
   ];
   return (
@@ -90,36 +105,14 @@ const Projects = () => {
       <h1>My Projects</h1>
       <div className="projectItem">
         {projectsRow.map((data, i) => (
-          <div className="item" key={i}>
-            <p className="title">{data.title}</p>
-            <p className="description">{data.description}</p>
-            <div>
-              <a className="live" href={data.link[0]} target="_blank">
-                {data.buttons[0]}
-              </a>
-              {data.buttons[1] && (
-                <a
-                  className="live"
-                  href={data.link[1]}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {data.buttons[1]}
-                </a>
-              )}
-            </div>
-            <div
-              style={{
-                borderTop: "1px solid #777777",
-                display: "flex",
-                justifyContent: "space-evenly",
-              }}
-            >
-              {data.languages.map((lang) => (
-                <span className="language">{lang}</span>
-              ))}
-            </div>
-          </div>
+          <BookCard
+            title={data.title}
+            description={data.description}
+            buttons={data.buttons}
+            languages={data.languages}
+            link={data.link}
+            image={data.image}
+          />
         ))}
       </div>
     </div>
