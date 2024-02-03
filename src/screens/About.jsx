@@ -13,7 +13,7 @@ const About = () => {
   ];
   return (
     <div className="about">
-      <h1>About me</h1>
+      <h1 className="pageTitle">About me</h1>
       <div className="aboutPara">
         <p>
           I'm <span className="highlight">Hammad Aslam</span>, an Information

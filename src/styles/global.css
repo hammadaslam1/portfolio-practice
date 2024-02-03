@@ -14,7 +14,7 @@
 
 h1 {
     font-size: 32pt;
-    color: #112d4e;
+    /* color: #112d4e; */
 }
 
 p {
@@ -33,6 +33,11 @@ p {
 /*navbarnavbarnavbarnavbar */
 /*navbarnavbarnavbarnavbar */
 
+.logoTitle {
+    color: #fff;
+    cursor: pointer;
+}
+
 .appbar {
     background-color: #112d4e;
     height: 60px;
@@ -46,6 +51,45 @@ p {
     z-index: 1;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+
+h2 {
+    color: #fff;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    font-size: 18pt;
+}
+
+.list>li {
+    list-style: none;
+    /* flex: 1; */
+}
+
+.list>li {
+    /* width: 10%; */
+    -webkit-transition: all 1s;
+    border-bottom: transparent 2px solid;
+    transition:all 1s;
+    transition-timing-function: linear;
+}
+
+.list>li:hover{
+    /* width: 20%; */
+    font-size: 18;
+    border-bottom: 2px solid #fff;
+    transition-timing-function: ease;
+}
 
 /*footerfooterfooterfooter */
 /*footerfooterfooterfooter */
@@ -98,7 +142,7 @@ p {
 
 .projectItem {
     display: grid;
-    grid-template-columns: repeat(4,2fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 45px 5px;
 }
 
@@ -113,17 +157,18 @@ p {
     color: #fff;
 }
 
-.description{
+.description {
     background-color: aqua;
 }
 
-.live{
+.live {
     padding: 10px;
     background-color: transparent;
     border: 1px solid #112d4e;
     margin: 30px;
 }
-.live:hover{
+
+.live:hover {
     background-color: #112d4e;
     color: #fff;
 }
@@ -142,6 +187,10 @@ p {
 /*about usabout usabout usabout us */
 /*about usabout usabout usabout us */
 /*about usabout usabout usabout us */
+
+.pageTitle {
+    color: #112d4e;
+}
 
 .about {
     padding: 40px;
@@ -162,90 +211,3 @@ p {
 /*contactcontactcontactcontact */
 /*contactcontactcontactcontact */
 /*contactcontactcontactcontact */
-h2 {
-    color: #fff;
-    cursor: pointer;
-}
-
-.list {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    flex-wrap: wrap;
-}
-
-.list>li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-    border-bottom: 2px solid transparent;
-}
-
-
-
-.contact {
-    width: calc(100%-200px);
-    padding: 40px;
-    margin: 20px;
-    border-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #112d4e22;
-    /*border: 2px solid #112d4e; */
-    box-shadow: 0 1px 10px 1px #112d4e;
-}
-
-.card {
-    border: 2px solid #112d4e;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
-    overflow: hidden;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: background-color 1s, height 1s, transform 1s;
-    transition-timing-function: ease;
-    border-radius: 50%;
-}
-
-
-.card:hover {
-    border: 2px solid #112d4e;
-    background-color: #112d4e99;
-    /*height: 120px; */
-
-    .anchor {
-        color: #112d4e;
-        padding: 8px;
-        background-color: #fff;
-        /*border: 3px solid #fff; */
-    }
-
-    .anchor:hover {
-        border: 3px solid #112d4e;
-        background-color: #112d4e;
-        color: #fff;
-    }
-
-
-}
-
-.anchor {
-    padding: 0;
-    border: 3px solid transparent;
-    transition: padding 1s, height 1s, transform 1s;
-    transition-timing-function: ease;
-    color: transparent;
-}

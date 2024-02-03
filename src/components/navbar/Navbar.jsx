@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="appbar">
       <div>
-        <h2 title="Muhammad Hammad Aslam">M H A</h2>
+        <h1 className="logoTitle" title="Muhammad Hammad Aslam">M H A</h1>
       </div>
       <ul className="list">
         <li>
