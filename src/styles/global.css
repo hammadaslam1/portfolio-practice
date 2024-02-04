@@ -80,11 +80,11 @@ h2 {
     /* width: 10%; */
     -webkit-transition: all 1s;
     border-bottom: transparent 2px solid;
-    transition:all 1s;
+    transition: all 1s;
     transition-timing-function: linear;
 }
 
-.list>li:hover{
+.list>li:hover {
     /* width: 20%; */
     font-size: 18;
     border-bottom: 2px solid #fff;
@@ -211,3 +211,12 @@ h2 {
 /*contactcontactcontactcontact */
 /*contactcontactcontactcontact */
 /*contactcontactcontactcontact */
+
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}

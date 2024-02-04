@@ -10,7 +10,7 @@ const BookCard = (props) => {
   const handleClick = (link) => {
     window.open(link);
   };
-  const arr = [<Github />, <Play />];
+  const arr = [<Github size={24} />, <Play />];
   return (
     <div class="book">
       <div className="shadow">

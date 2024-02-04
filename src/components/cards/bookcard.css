@@ -29,8 +29,6 @@
   top: 0;
   position: absolute;
   background-color: #112d4e;
-  /* filter: hue-rotate(195deg); */
-  /* background-image: url('../assets/icons/facebook.png'); */
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -91,6 +89,8 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #112d4e, #fff);
 }
 
 .bookTitle {
@@ -137,7 +137,7 @@
 .languages {
   display: flex;
   border-radius: 10px;
-  box-shadow: 0 -40px 100px 50px #112d4e;
+  /* box-shadow: 0 -40px 100px 50px #112d4e; */
   background-color: #112d4e;
   color: #fff;
   flex-wrap: wrap;
@@ -179,7 +179,8 @@
 }
 
 .links>button:hover {
-  background-color: transparent;
+  background-color: #fff;
+  outline: #fff;
   color: #112d4e
 }
 
