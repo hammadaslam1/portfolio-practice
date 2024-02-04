@@ -7,7 +7,7 @@ const Facebook = (props) => {
       width={props.size}
       height={props.size}
       className="svgIcon"
-      viewBox="0,0,256,256"
+      viewBox="0,0,226,256"
       style={{ fill: "#000000" }}
     >
       <g

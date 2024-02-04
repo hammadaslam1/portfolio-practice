@@ -142,7 +142,7 @@ h2 {
 
 .projectItem {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(1, 2fr);
     gap: 45px 5px;
 }
 
@@ -214,9 +214,57 @@ h2 {
 
 
 .contact {
+    padding: 40px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 64vh;
+}
+
+.contactItems {
+    width: calc(100% - 80px);
+    padding: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px;
     flex-wrap: wrap;
+}
+
+
+
+/* media queries */
+/* media queries */
+/* media queries */
+/* media queries */
+/* media queries */
+
+
+@media (min-width: 768px) {
+    .projectItem {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 45px 5px;
+    }
+}
+@media (min-width: 1024px) {
+    .projectItem {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 45px 5px;
+    }
+}
+@media (min-width: 1440px) {
+    .projectItem {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 45px 5px;
+    }
+}
+@media (min-width: 2560px) {
+    .projectItem {
+        display: grid;
+        grid-template-columns: repeat(7, 2fr);
+        gap: 45px 5px;
+    }
 }

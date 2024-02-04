@@ -1,13 +1,12 @@
 @import url('../../styles/global.css');
 
 
-
-
 .tooltip-container {
     position: relative;
     cursor: pointer;
     transition: all 0.2s;
-    font-size: 17px;
+    font-size: 20px;
+    /* text-align: right; */
     border-radius: 10px;
 }
 
@@ -28,7 +27,7 @@
 
 .profile {
     background: #112d4e;
-    border-radius: 10px 25px;
+    border-radius: 10px 35px;
     padding: 20px;
     border: 1px solid #112d4e;
 }
@@ -50,7 +49,7 @@
 .layer {
     width: 80px;
     height: 80px;
-    transition: transform 0.3s;
+    transition: transform .3s;
 }
 
 .icon:hover .layer {
@@ -70,15 +69,16 @@
 
 .layer span,
 .text {
-    color: #e6683c;
+    color: #112d4e;
     border-color: #e6683c;
 }
+
 
 .icon:hover.layer span {
     box-shadow: -1px 1px 3px #e6683c;
 }
 
-.icon .text {
+.icon .nameText {
     position: absolute;
     left: 50%;
     bottom: -5px;
@@ -88,10 +88,11 @@
     transition: bottom 0.3s ease, opacity 0.3s ease;
 }
 
-.icon:hover .text {
+.icon:hover .nameText {
     bottom: -35px;
     opacity: 1;
 }
+
 
 .icon:hover .layer span:nth-child(1) {
     opacity: 0.2;
@@ -117,6 +118,12 @@
     transform: translate(20px, -20px);
 }
 
+.nameText {
+    font-size: 18pt;
+    font-weight: 900;
+    color: #112d4e;
+}
+
 /* .instagramSVG */
 /* .instagramSVG */
 /* .instagramSVG */
@@ -127,7 +134,7 @@
 
 
 .instagramSVG {
-    font-size: 35px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,7 +150,7 @@
             #dc2743 50%,
             #cc2366 75%,
             #bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1); */
 }
 
 
@@ -156,7 +163,7 @@
 /* .githubSVG */
 
 .githubSVG {
-    font-size: 25px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +193,7 @@
 /* .facebookSVG */
 
 .facebookSVG {
-    font-size: 25px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +222,7 @@
 
 
 .discordSVG {
-    font-size: 25px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,7 +252,7 @@
 
 
 .linkedinSVG {
-    font-size: 25px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,7 +281,7 @@
 
 
 .gmailSVG {
-    font-size: 25px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,7 +308,7 @@
 /* twitter */
 
 .twitterSVG {
-    font-size: 25px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,6 +326,36 @@
             #065dab 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1da1f2', endColorstr='#065dab', GradientType=1);
 }
+
+
+/* whatsapp */
+/* whatsapp */
+/* whatsapp */
+/* whatsapp */
+/* whatsapp */
+
+
+.whatsappSVG {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(45deg,
+            #25d366 0%,
+            #25d366 25%,
+            #4ac959 50%,
+            #4ac959 75%,
+            #25d366 100%);
+    background: linear-gradient(45deg,
+            #25d366 0%,
+            #25d366 25%,
+            #4ac959 50%,
+            #4ac959 75%,
+            #25d366 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#25d366', endColorstr='#25d366', GradientType=1);
+}
+
+
 
 
 
@@ -360,7 +397,3 @@
     color: #ccc;
     padding-top: 5px;
 }
-
-.followers:hover + .user{
-        background-color: #004d7a;
-    }
