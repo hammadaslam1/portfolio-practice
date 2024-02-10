@@ -3,10 +3,11 @@ import SocialCard from "../components/cards/SocialCard";
 import Instagram from "../components/assets/svg/Instagram";
 import { selfContact } from "../components/data/ContactsData";
 import '../styles/global.css'
+import { ContactCSS } from "../styles/ContactCSS";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div style={ContactCSS.contact}>
       <h1 className="pageTitle">My Contacts</h1>
       <div className="contactItems">
         {selfContact.map((data, i) => (

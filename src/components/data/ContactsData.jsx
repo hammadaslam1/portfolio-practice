@@ -6,11 +6,12 @@ import Twitter from "../assets/svg/Twitter";
 import Discord from "../assets/svg/Discord";
 import Mail from "../assets/svg/Mail";
 import Whatsapp from "../assets/svg/Whatsapp";
+import HAMMAD from "../assets/profile/hammad.jpg";
 
 export const selfContact = [
   {
     handle: "@hammadaslam10",
-    imageSrc: "",
+    imageSrc: HAMMAD,
     followers: "320+ Followers",
     link: "https://instagram.com/hammadaslam10",
     name: "حماد راجپوت",
@@ -20,8 +21,8 @@ export const selfContact = [
   },
   {
     handle: "@hammadaslam1",
-    imageSrc: "",
-    followers: "19 Repositories",
+    imageSrc: HAMMAD,
+    followers: "20 Repositories",
     link: "https://github.com/hammadaslam1",
     name: "Muhammad Hammad Aslam",
     media: <Github size={50} />,
@@ -30,7 +31,7 @@ export const selfContact = [
   },
   {
     handle: "@hammadaslam.308",
-    imageSrc: "",
+    imageSrc: HAMMAD,
     followers: "600+ Followers",
     link: "https://web.facebook.com/hammadaslam.308",
     name: "حماد راجپوت",
@@ -40,7 +41,7 @@ export const selfContact = [
   },
   {
     handle: "@hammadaslam10",
-    imageSrc: "",
+    imageSrc: HAMMAD,
     followers: "170+ Connections",
     link: "https://www.linkedin.com/in/hammadaslam10/",
     name: "Hammad Aslam",
@@ -50,7 +51,7 @@ export const selfContact = [
   },
   {
     handle: "hammadaslam308@gmail.com",
-    imageSrc: "",
+    imageSrc: HAMMAD,
     followers: "",
     link: "mailto:hammadaslam308@gmail.com",
     name: "Hammad Aslam",
@@ -60,7 +61,7 @@ export const selfContact = [
   },
   {
     handle: "@hammadaslam10",
-    imageSrc: "",
+    imageSrc: HAMMAD,
     followers: "2 Channels",
     link: "https://discordapp.com/users/1061504929681911879",
     name: "Hammad Aslam",
@@ -69,8 +70,8 @@ export const selfContact = [
     mediaName: "Discord",
   },
   {
-    handle: "@hammadaslam10",
-    imageSrc: "",
+    handle: "@HammadAslam_308",
+    imageSrc: HAMMAD,
     followers: "",
     link: "https://twitter.com/HammadAslam_308",
     name: "محمد حماد اسلم",
@@ -80,8 +81,8 @@ export const selfContact = [
   },
   {
     handle: "@hammadaslam10",
-    imageSrc: "",
-    followers: "",
+    imageSrc: HAMMAD,
+    followers: "1 Channel (Mad Coder)",
     link: "https://wa.me/qr/7R7TGR2TSQAEE1",
     name: "Hammad Aslam",
     media: <Whatsapp />,

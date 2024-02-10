@@ -15,8 +15,8 @@ const SocialCard = (props) => {
       <div class="tooltip">
         <div class="profile">
           <div class="user">
-            <div class="img">
-              <img src={`${props.imageSrc}`} height={"50px"} alt="" />
+            <div class="profileImg" style={{backgroundImage: `url(${props.imageSrc})`}}>
+              {/* <img src={`${props.imageSrc}`} className="profileImg" alt="" /> */}
             </div>
             <div class="details">
               <button class="name" onClick={() => handleClick(props.link)}>
@@ -39,6 +39,10 @@ const SocialCard = (props) => {
       <div class="text">
         <a class="icon" href={props.link} target="_blank" rel="noreferrer">
           <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <span></span>
             <span></span>
             <span></span>

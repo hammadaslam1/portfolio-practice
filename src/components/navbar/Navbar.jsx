@@ -1,29 +1,58 @@
-import "../../styles/global.css";
+// import "../../styles/global.css";
 import { Link } from "react-router-dom";
 import { ABOUT, CONTACT, HOME, PROJECTS, SKILLS } from "../../router/Routes";
+import { NavbarCSS } from "../../styles/NavbarCSS";
+import { MyName } from "../data/Strings";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const links = [
+    {
+      to: HOME,
+      title: "Home",
+    },
+    {
+      to: SKILLS,
+      title: "Skills",
+    },
+    {
+      to: PROJECTS,
+      title: "Projects",
+    },
+    {
+      to: ABOUT,
+      title: "About",
+    },
+    {
+      to: CONTACT,
+      title: "Contact",
+    },
+  ];
   return (
-    <nav className="appbar">
+    <nav style={NavbarCSS.appbar}>
       <div>
-        <h1 className="logoTitle" title="Muhammad Hammad Aslam">M H A</h1>
+        <h1 style={NavbarCSS.logoTitle} title={MyName}>
+          M H A
+        </h1>
       </div>
-      <ul className="list">
-        <li>
-          <Link to={HOME}>Home</Link>
-        </li>
-        <li>
-          <Link to={SKILLS}>Skills</Link>
-        </li>
-        <li>
-          <Link to={PROJECTS}>Projects</Link>
-        </li>
-        <li>
-          <Link to={ABOUT}>About</Link>
-        </li>
-        <li>
-          <Link to={CONTACT}>Contact</Link>
-        </li>
+      <ul style={NavbarCSS.list}>
+        {links.map((data, i) => (
+          <li
+            key={i}
+            style={
+              hoveredIndex === i
+                ? { ...NavbarCSS.listItem, ...NavbarCSS.listItemHover }
+                : NavbarCSS.listItem
+            }
+            onMouseEnter={() => setHoveredIndex(i)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <Link style={NavbarCSS.link} to={data.to}>
+              {data.title}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
