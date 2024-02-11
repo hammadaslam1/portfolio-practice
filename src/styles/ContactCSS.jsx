@@ -7,4 +7,8 @@ export const ContactCSS = {
     alignItems: "center",
     minHeight: "64vh",
   },
+  item: {
+    display: "flex",
+    justifyContent: "center",
+  },
 };

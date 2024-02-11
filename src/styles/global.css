@@ -137,7 +137,7 @@ h2 {
 /*about usabout usabout usabout us */
 
 .pageTitle {
-    width: 400px;
+    width: min(400px, 100%);
     color: #112d4e;
     padding: 10px;
     border-bottom: 13px solid #112d4e;
@@ -159,10 +159,11 @@ h2 {
 .contactItems {
     width: calc(100% - 80px);
     padding: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 45px 5px;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 
@@ -172,6 +173,16 @@ h2 {
 /* media queries */
 /* media queries */
 /* media queries */
+@media (min-width: 420px) {
+    .contactItems {
+        width: calc(100% - 80px);
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 45px 5px;
+        /* align-items: center; */
+    }
+}
 
 
 @media (min-width: 768px) {
@@ -180,6 +191,16 @@ h2 {
         grid-template-columns: repeat(2, 2fr);
         gap: 45px 5px;
     }
+
+    .contactItems {
+        width: calc(100% - 80px);
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 45px 5px;
+        /* align-items: center; */
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -187,6 +208,14 @@ h2 {
         display: grid;
         grid-template-columns: repeat(3, 2fr);
         gap: 45px 5px;
+    }
+    .contactItems {
+        width: calc(100% - 80px);
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 45px 5px;
+        /* align-items: center; */
     }
 }
 
@@ -196,6 +225,14 @@ h2 {
         grid-template-columns: repeat(4, 2fr);
         gap: 45px 5px;
     }
+    .contactItems {
+        width: calc(100% - 80px);
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        gap: 45px 5px;
+        /* align-items: center; */
+    }
 }
 
 @media (min-width: 2560px) {
@@ -203,5 +240,13 @@ h2 {
         display: grid;
         grid-template-columns: repeat(7, 2fr);
         gap: 45px 5px;
+    }
+    .contactItems {
+        width: calc(100% - 80px);
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(8, 2fr);
+        gap: 45px 5px;
+        /* align-items: center; */
     }
 }
