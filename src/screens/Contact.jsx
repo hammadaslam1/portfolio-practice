@@ -21,6 +21,7 @@ const Contact = () => {
             handle={data.handle}
             followers={data.followers}
             imageSrc={data.imageSrc}
+            bg={data.bg}
           />
         ))}
       </div>

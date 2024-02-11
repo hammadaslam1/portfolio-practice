@@ -18,36 +18,40 @@ export const selfContact = [
     media: <Instagram />,
     class: "instagramSVG",
     mediaName: "Instagram",
+    bg: '#dc2743'
   },
   {
     handle: "@hammadaslam1",
     imageSrc: HAMMAD,
     followers: "20 Repositories",
     link: "https://github.com/hammadaslam1",
-    name: "Muhammad Hammad Aslam",
+    name: "Hammad Aslam",
     media: <Github size={50} />,
     class: "githubSVG",
     mediaName: "Github",
+    bg: '#2a2b2f'
   },
   {
-    handle: "@hammadaslam.308",
+    handle: "@hammadaslam101",
     imageSrc: HAMMAD,
     followers: "600+ Followers",
-    link: "https://web.facebook.com/hammadaslam.308",
+    link: "https://web.facebook.com/hammadaslam101",
     name: "حماد راجپوت",
     media: <Facebook size={65} />,
     class: "facebookSVG",
     mediaName: "Facebook",
+    bg: '#0044ff'
   },
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
-    followers: "170+ Connections",
+    followers: "180+ Connections",
     link: "https://www.linkedin.com/in/hammadaslam10/",
     name: "Hammad Aslam",
     media: <LinkedIn />,
     class: "linkedinSVG",
     mediaName: "LinkedIn",
+    bg: '#0044ff'
   },
   {
     handle: "hammadaslam308@gmail.com",
@@ -58,6 +62,7 @@ export const selfContact = [
     media: <Mail />,
     class: "gmailSVG",
     mediaName: "Gmail",
+    bg: '#c71610'
   },
   {
     handle: "@hammadaslam10",
@@ -68,16 +73,18 @@ export const selfContact = [
     media: <Discord />,
     class: "discordSVG",
     mediaName: "Discord",
+    bg: '#5b71c0'
   },
   {
-    handle: "@HammadAslam_308",
+    handle: "@hammadaslam_10",
     imageSrc: HAMMAD,
     followers: "",
-    link: "https://twitter.com/HammadAslam_308",
+    link: "https://twitter.com/hammadaslam_10",
     name: "محمد حماد اسلم",
     media: <Twitter />,
     class: "twitterSVG",
     mediaName: "Twitter",
+    bg: '#326ada'
   },
   {
     handle: "@hammadaslam10",
@@ -88,5 +95,6 @@ export const selfContact = [
     media: <Whatsapp />,
     class: "whatsappSVG",
     mediaName: "WhatsApp",
+    bg: '#25d366'
   },
 ];
