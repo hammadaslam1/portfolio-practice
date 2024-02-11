@@ -5,15 +5,15 @@ import "../styles/global.css";
 const Home = () => {
   return (
     <div style={HomeCSS.homeContainer}>
+      {/* <div style={HomeCSS.overlay}></div> */}
+      <h1 style={HomeCSS.h1} className="pageTitle">
+        Welcome
+      </h1>
       <div style={HomeCSS.homeContent}>
-        {/* <div style={HomeCSS.overlay}></div> */}
-        <h1 style={HomeCSS.h1} className="pageTitle">
-          Welcome to My Portfolio
-        </h1>
-        <p style={HomeCSS.p}>
+        <p>
           I'm a passionate Web Developer based in Jauharabad.
         </p>
-        <p style={HomeCSS.p}>
+        <p>
           Explore my projects, learn more about me, and feel free to get in
           touch!
         </p>

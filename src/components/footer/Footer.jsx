@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
+import { FooterCSS } from "../../styles/FooterCSS";
 import "../../styles/global.css";
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <div>
         <span title="Mad Coder">
           &copy; copyrights -{" "}
-          <a href="https://mha-portfolio.web.app" target="_blank">
+          <a style={FooterCSS.link} href="https://mha-portfolio.web.app" target="_blank">
             Mad Coder
           </a>
         </span>

@@ -115,6 +115,10 @@
     transition: bottom 0.3s ease, opacity 0.3s ease;
 }
 
+.nameText{
+    z-index: 3;
+}
+
 .icon:hover .nameText {
     bottom: -55px;
     opacity: 1;

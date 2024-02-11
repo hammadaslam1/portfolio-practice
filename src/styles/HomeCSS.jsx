@@ -1,8 +1,10 @@
 export const HomeCSS = {
   homeContainer: {
-    // backgroundColor: "#f4f4f4",
-    padding: "50px",
-    textAlign: "center",
+    padding: "40px",
+    margin: "10px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   overlay: {
     position: "absolute",
@@ -13,15 +15,16 @@ export const HomeCSS = {
     backgroundColor: "rgba(0,0,0,0.5)",
   },
   homeContent: {
-    maxWidth: "600px",
-    margin: "0 auto",
+    maxWidth: "800px",
+    textAlign: "justify",
+    fontWeight: "600",
   },
 
-  h1: {
-    fontSize: "36px",
-    color: "#333",
-    marginBottom: "20px",
-  },
+  // h1: {
+  //   fontSize: "36px",
+  //   color: "#333",
+  //   marginBottom: "20px",
+  // },
 
   p: {
     fontSize: "18px",
