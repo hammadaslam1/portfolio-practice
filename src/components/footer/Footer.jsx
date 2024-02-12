@@ -9,8 +9,12 @@ const Footer = () => {
       </div> */}
       <div>
         <span title="Mad Coder">
-          &copy; copyrights -{" "}
-          <a style={FooterCSS.link} href="https://mha-portfolio.web.app" target="_blank">
+          &copy; Copyrights 2024 - Made by{" "}
+          <a
+            style={FooterCSS.link}
+            href="https://mha-portfolio.web.app"
+            target="_blank"
+          >
             Mad Coder
           </a>
         </span>

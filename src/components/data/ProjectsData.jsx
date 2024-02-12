@@ -6,6 +6,7 @@ import todoJS from "../assets/projectImages/todo-js.png";
 import todoReact from "../assets/projectImages/todo-react.png";
 import swiftSwap from "../assets/projectImages/swift-swap.png";
 import calculator from "../assets/projectImages/calculator.png";
+import hammad from '../assets/projectImages/hammad.png'
 
 // import image from '../'
 
@@ -14,6 +15,17 @@ const createRows = (title, description, buttons, languages, link, image) => {
 };
 
 export const projectsRow = [
+  createRows(
+    "Hammad Aslam",
+    "My Portfolio developed in React JS using Materialized components",
+    ["GitHub", "Live"],
+    ["JavaScript", "React JS", "Material UI", "CSS"],
+    [
+      "https://github.com/hammadaslam1/reviews-classifier",
+      "https://mha-portfolio.web.app/",
+    ],
+    hammad
+  ),
   createRows(
     "OpinioMine",
     "A system that analyzes the customer reviews and classify them on the basis of fakeness, sentiments, topics and context (Not completed yet)",

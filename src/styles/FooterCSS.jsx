@@ -1,7 +1,8 @@
 export const FooterCSS = {
   link: {
-    textDecoration: "none",
+    // textDecoration: "none",
     color: "#fff",
     borderBottom: "2px solid transparent",
+    fontSize: "14pt",
   },
 };
