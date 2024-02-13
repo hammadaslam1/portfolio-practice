@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { frameworks, languages } from "../components/data/SkillsData";
 import { SkillCSS } from "../styles/SkillCSS";
 
 const Skills = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div style={SkillCSS.skillContainer}>
       <h1 style={SkillCSS.h1} className="pageTitle">

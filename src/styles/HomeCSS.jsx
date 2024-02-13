@@ -1,10 +1,28 @@
 export const HomeCSS = {
   homeContainer: {
-    padding: "40px",
+    padding: "20px",
     margin: "10px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    fontWeight: "600",
+  },
+  about: {
+    maxWidth: "800px",
+  },
+  link: {
+    textDecoration: "none",
+    margin: '40px',
+    color: "#112d4e",
+    border: "2px solid #112d4e",
+    width: "120px",
+    padding: 5,
+    backgroundColor: "transparent",
+    borderRadius: '50px'
+  },
+  linkHover: {
+    backgroundColor: "#112d4e",
+    color: "#fff",
   },
   overlay: {
     position: "absolute",
@@ -20,11 +38,11 @@ export const HomeCSS = {
     fontWeight: "600",
   },
 
-  // h1: {
-  //   fontSize: "36px",
-  //   color: "#333",
-  //   marginBottom: "20px",
-  // },
+  h2: {
+    color: "#112d4e",
+    fontSize: "22pt",
+    textAlign: "center",
+  },
 
   p: {
     fontSize: "18px",

@@ -145,7 +145,7 @@ h2 {
 /*about usabout usabout usabout us */
 
 .pageTitle {
-    width: clamp(160px, 40vw, 250px);
+    width: clamp(160px, 40vw, 280px);
     font-size: clamp(18pt, 4vw, 30pt);
     padding: 10px;
     border-bottom: 4px solid #112d4e;
@@ -205,15 +205,6 @@ h2 {
         gap: 45px 5px;
         /* align-items: center; */
     }
-
-    p {
-        /* font-size: 14pt; */
-    }
-
-    .pageTitle {
-        /* width: 180px; */
-        /* font-size: 24pt; */
-    }
 }
 
 
@@ -243,15 +234,6 @@ h2 {
         justify-content: space-evenly;
         align-items: center;
     }
-
-    p {
-        /* font-size: 16pt; */
-    }
-
-    .pageTitle {
-        /* width: 210px; */
-        /* font-size: 27pt; */
-    }
 }
 
 @media (min-width: 1024px) {
@@ -268,15 +250,6 @@ h2 {
         grid-template-columns: repeat(4, 2fr);
         gap: 45px 5px;
         /* align-items: center; */
-    }
-
-    p {
-        /* font-size: 18pt; */
-    }
-
-    .pageTitle {
-        /* width: min(270px, 100%); */
-        /* font-size: 32pt; */
     }
 }
 

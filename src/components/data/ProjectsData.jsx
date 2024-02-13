@@ -6,7 +6,7 @@ import todoJS from "../assets/projectImages/todo-js.png";
 import todoReact from "../assets/projectImages/todo-react.png";
 import swiftSwap from "../assets/projectImages/swift-swap.png";
 import calculator from "../assets/projectImages/calculator.png";
-import hammad from '../assets/projectImages/hammad.png'
+import hammad from "../assets/projectImages/hammad.png";
 
 // import image from '../'
 
@@ -113,5 +113,41 @@ export const projectsRow = [
       "https://mha-calculator.web.app",
     ],
     calculator
+  ),
+];
+
+export const homeProjects = [
+  createRows(
+    "OpinioMine",
+    "A system that analyzes the customer reviews and classify them on the basis of fakeness, sentiments, topics and context (Not completed yet)",
+    ["GitHub"],
+    ["Python", "Flask", "JavaScript", "React JS"],
+    [
+      "https://github.com/hammadaslam1/reviews-classifier",
+      // "https://mha-dz-social-club.web.app/",
+    ],
+    opiniomine01
+  ),
+  createRows(
+    "Score Pulse",
+    "A simple Mobile App for managing scores of cricket matches developed using React Native",
+    ["GitHub"],
+    ["React Native", "JavaScript", "Native UI"],
+    [
+      "https://github.com/hammadaslam1/score-pulse",
+      // "https://mha-dz-social-club.web.app/",
+    ],
+    scorepulse01
+  ),
+  createRows(
+    "00 Social Club",
+    "A simple Web based UI design using React JS for Double Zero Social Club.",
+    ["GitHub", "Live"],
+    ["React JS", "JavaScript", "Material UI"],
+    [
+      "https://github.com/hammadaslam1/00-Social-Club-UI",
+      "https://mha-dz-social-club.web.app/",
+    ],
+    dzSocial
   ),
 ];

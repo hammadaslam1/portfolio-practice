@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { AboutCSS } from "../styles/AboutCSS";
 
 const About = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div style={AboutCSS.about}>
       <h1 className="pageTitle">About me</h1>

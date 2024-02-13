@@ -4,8 +4,13 @@ import Instagram from "../components/assets/svg/Instagram";
 import { selfContact } from "../components/data/ContactsData";
 import "../styles/global.css";
 import { ContactCSS } from "../styles/ContactCSS";
+import { useEffect, useRef } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div style={ContactCSS.contact}>
       <h1 className="pageTitle">My Contacts</h1>

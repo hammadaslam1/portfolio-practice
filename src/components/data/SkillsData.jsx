@@ -47,6 +47,25 @@ export const languages = [
   },
 ];
 
+export const shortTech = [
+  {
+    icon: <JavaScript height={90} />,
+    name: "JavaScript",
+  },
+  {
+    icon: <ReactIcon height={90} />,
+    name: "React",
+  },
+  {
+    icon: <Python height={90} />,
+    name: "Python",
+  },
+  {
+    icon: <Laravel height={90} />,
+    name: "Laravel",
+  },
+];
+
 export const frameworks = [
   {
     icon: <ReactIcon height={100} />,

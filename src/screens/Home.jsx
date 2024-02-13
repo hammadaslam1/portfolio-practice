@@ -1,48 +1,112 @@
+import { Link } from "react-router-dom";
+import BookCard from "../components/cards/BookCard";
+import { homeProjects } from "../components/data/ProjectsData";
 import { HomeCSS } from "../styles/HomeCSS";
+import { PROJECTS, SKILLS } from "../router/Routes";
 import "../styles/global.css";
+import { useEffect, useState } from "react";
+import { SkillCSS } from "../styles/SkillCSS";
+import { shortTech } from "../components/data/SkillsData";
+// import { ABOUT, CONTACT, HOME, PROJECTS, SKILLS } from "../../router/Routes";
 // import "./Home.css"; // Import CSS for styling
 
 const Home = () => {
+  const [hovered, setHovered] = useState(false);
+  const [contact, setContact] = useState(false);
+  const [skills, setSkills] = useState(false);
+  const handleMouse = () => {
+    setHovered(!hovered);
+  };
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div style={HomeCSS.homeContainer}>
       {/* <div style={HomeCSS.overlay}></div> */}
-      <h1 style={HomeCSS.h1} className="pageTitle">
-        Welcome
-      </h1>
-      <div style={HomeCSS.homeContent}>
+      <h1 className="pageTitle">Hammad Aslam</h1>
+      <p>
+        Web Developer <span className="highlight">|</span> Android Developer
+      </p>
+      {/* Add an image or background here */}
+
+      <section style={HomeCSS.about}>
+        <h2 style={HomeCSS.h2}>About Me</h2>
         <p>
-          I'm a passionate Web Developer based in Jauharabad.
+          An enthusiastic frontend developer who delights in fashioning
+          user-friendly interfaces and captivating web experiences.
         </p>
-        <p>
-          Explore my projects, learn more about me, and feel free to get in
-          touch!
-        </p>
-        <div className="cta-section">
-          <a href="/projects" className="cta-button">
-            View Projects
-          </a>
-          <a href="/contact" className="cta-button">
-            Get in Touch
-          </a>
+      </section>
+
+      <section
+        className="projects"
+        style={{ paddingBottom: "0px", marginBottom: 0 }}
+      >
+        <h2 style={HomeCSS.h2}>Featured Projects</h2>
+        <div className="projectItem">
+          {homeProjects.map((data, i) => (
+            <BookCard
+              title={data.title}
+              description={data.description}
+              buttons={data.buttons}
+              languages={data.languages}
+              link={data.link}
+              image={data.image}
+            />
+          ))}
         </div>
-        <div className="social-links">
-          <a
-            href="https://linkedin.com/in/hammadaslam10"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-linkedin"></i>a
-          </a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-          {/* Add more social media icons as needed */}
+        <Link
+          onMouseOver={handleMouse}
+          onMouseLeave={handleMouse}
+          style={
+            hovered ? HomeCSS.link : { ...HomeCSS.link, ...HomeCSS.linkHover }
+          }
+          to={PROJECTS}
+        >
+          See All
+        </Link>
+      </section>
+
+      <section
+        className="projects"
+        style={{ paddingBottom: "0px", marginBottom: 0 }}
+      >
+        <h2 style={HomeCSS.h2}>Skills & Expertise</h2>
+        <div style={SkillCSS.icons}>
+          {shortTech.map((data, i) => (
+            <div style={SkillCSS.iconInternal} key={i}>
+              <span>{data.icon}</span>
+              <span style={SkillCSS.lang}>{data.name}</span>
+            </div>
+          ))}
         </div>
-      </div>
+        <Link
+          onMouseOver={() => setSkills(!skills)}
+          onMouseLeave={() => setSkills(!skills)}
+          style={
+            skills ? HomeCSS.link : { ...HomeCSS.link, ...HomeCSS.linkHover }
+          }
+          to={SKILLS}
+        >
+          See All
+        </Link>
+      </section>
+
+      {/* <section
+        className="projects"
+        style={{ paddingBottom: "0px", marginBottom: 0 }}
+      >
+        <Link
+          onMouseOver={() => setContact(!contact)}
+          onMouseLeave={() => setContact(!contact)}
+          style={
+            contact ? HomeCSS.link : { ...HomeCSS.link, ...HomeCSS.linkHover }
+          }
+          to={PROJECTS}
+        >
+          Contact me
+        </Link>
+      </section> */}
     </div>
   );
 };

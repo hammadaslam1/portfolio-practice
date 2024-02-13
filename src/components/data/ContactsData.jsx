@@ -45,7 +45,7 @@ export const selfContact = [
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
-    followers: "180+ Connections",
+    followers: "195+ Connections",
     link: "https://www.linkedin.com/in/hammadaslam10/",
     name: "Hammad Aslam",
     media: <LinkedIn />,
