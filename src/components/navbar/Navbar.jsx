@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import { ABOUT, CONTACT, HOME, PROJECTS, SKILLS } from "../../router/Routes";
 import { NavbarCSS } from "../../styles/NavbarCSS";
 import { MyName } from "../data/Strings";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MenuCSS } from "../../styles/MenuCSS";
 import Menu from "./Menu";
+import MenuIcon from "../assets/svg/MenuIcon";
 
 const Navbar = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const menuRef = useRef(null);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -36,6 +37,20 @@ const Navbar = () => {
       title: "Contact",
     },
   ];
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
   return (
     <nav style={NavbarCSS.appbar}>
       <div>
@@ -64,11 +79,15 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div style={MenuCSS.menuContainer} className="menu-container">
+      <div
+        style={MenuCSS.menuContainer}
+        className="menu-container"
+        ref={menuRef}
+      >
         <button style={MenuCSS.menuButton} onClick={toggleMenu}>
-          Menu
+          <MenuIcon height={40} />
         </button>
-        {isMenuOpen && <Menu />}
+        {isMenuOpen && <Menu onClick={setIsMenuOpen} />}
       </div>
     </nav>
   );

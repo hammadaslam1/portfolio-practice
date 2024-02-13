@@ -22,6 +22,7 @@ export const SkillCSS = {
   icons: {
     display: "flex",
     flexWrap: "wrap",
+    justifyContent: 'center',
   },
   iconInternal: {
     display: "flex",
