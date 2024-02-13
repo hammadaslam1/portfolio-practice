@@ -1,6 +1,6 @@
 export const SkillCSS = {
   skillContainer: {
-    padding: "40px",
+    padding: "20px",
     margin: "10px",
     display: "flex",
     flexDirection: "column",
@@ -17,7 +17,7 @@ export const SkillCSS = {
   lang:{
     fontSize: '16pt',
     color: '#112d4e',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   icons: {
     display: "flex",

@@ -1,6 +1,6 @@
 export const ContactCSS = {
   contact: {
-    padding: "40px",
+    padding: "20px",
     margin: "10px",
     display: "flex",
     flexDirection: "column",

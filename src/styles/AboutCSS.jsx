@@ -1,7 +1,7 @@
 export const AboutCSS = {
 
   about: {
-    padding: "40px",
+    padding: "20px",
     margin: "10px",
     display: "flex",
     flexDirection: "column",

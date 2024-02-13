@@ -4,9 +4,16 @@ import { ABOUT, CONTACT, HOME, PROJECTS, SKILLS } from "../../router/Routes";
 import { NavbarCSS } from "../../styles/NavbarCSS";
 import { MyName } from "../data/Strings";
 import { useState } from "react";
+import { MenuCSS } from "../../styles/MenuCSS";
+import Menu from "./Menu";
 
 const Navbar = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   const links = [
     {
       to: HOME,
@@ -36,7 +43,10 @@ const Navbar = () => {
           M H A
         </h1>
       </div>
-      <ul style={NavbarCSS.list}>
+      <ul
+        className="list"
+        // style={NavbarCSS.list}
+      >
         {links.map((data, i) => (
           <li
             key={i}
@@ -54,6 +64,12 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div style={MenuCSS.menuContainer} className="menu-container">
+        <button style={MenuCSS.menuButton} onClick={toggleMenu}>
+          Menu
+        </button>
+        {isMenuOpen && <Menu />}
+      </div>
     </nav>
   );
 };

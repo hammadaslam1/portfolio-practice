@@ -18,14 +18,14 @@ export const NavbarCSS = {
       backgroundColor: "#f00",
     },
   },
-  list: {
-    display: "flex",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    width: "50%",
-    flexWrap: "wrap",
-    fontSize: "18pt",
-  },
+  // list: {
+  //   display: "flex",
+  //   justifyContent: "space-evenly",
+  //   alignItems: "center",
+  //   width: "50%",
+  //   flexWrap: "wrap",
+  //   fontSize: "18pt",
+  // },
   link: {
     textDecoration: "none",
     color: "#fff",
