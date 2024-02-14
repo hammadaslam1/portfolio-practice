@@ -115,7 +115,7 @@
     transition: bottom 0.3s ease, opacity 0.3s ease;
 }
 
-.nameText{
+.nameText {
     z-index: 3;
 }
 
@@ -198,6 +198,23 @@
     opacity: 1;
     transform: translate(60px, -60px);
     /* box-shadow: -5px 5px 10px 5px #e6683c; */
+}
+
+
+/* fiverr */
+/* fiverr */
+/* fiverr */
+/* fiverr */
+/* fiverr */
+/* fiverr */
+/* fiverr */
+
+.fiverrSVG {
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1dbf73;
 }
 
 

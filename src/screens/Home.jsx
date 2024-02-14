@@ -43,7 +43,7 @@ const Home = () => {
         style={{ paddingBottom: "0px", marginBottom: 0 }}
       >
         <h2 style={HomeCSS.h2}>Featured Projects</h2>
-        <div className="projectItem">
+        <div className="homeProj">
           {homeProjects.map((data, i) => (
             <BookCard
               title={data.title}

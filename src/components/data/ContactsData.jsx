@@ -7,8 +7,20 @@ import Discord from "../assets/svg/Discord";
 import Mail from "../assets/svg/Mail";
 import Whatsapp from "../assets/svg/Whatsapp";
 import HAMMAD from "../assets/profile/hammad.jpg";
+import Fiverr from "../assets/svg/Fiverr";
 
 export const selfContact = [
+  {
+    handle: "@hammadaslam10",
+    imageSrc: HAMMAD,
+    followers: "2 Gigs",
+    link: "https://www.fiverr.com/hammadaslam10",
+    name: "Hammad Aslam",
+    media: <Fiverr />,
+    class: "fiverrSVG",
+    mediaName: "Fiverr",
+    bg: "#1dbf73",
+  },
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
@@ -18,7 +30,7 @@ export const selfContact = [
     media: <Instagram />,
     class: "instagramSVG",
     mediaName: "Instagram",
-    bg: '#dc2743'
+    bg: "#dc2743",
   },
   {
     handle: "@hammadaslam1",
@@ -29,7 +41,7 @@ export const selfContact = [
     media: <Github size={50} />,
     class: "githubSVG",
     mediaName: "Github",
-    bg: '#2a2b2f'
+    bg: "#2a2b2f",
   },
   {
     handle: "@hammadaslam101",
@@ -40,18 +52,18 @@ export const selfContact = [
     media: <Facebook size={65} />,
     class: "facebookSVG",
     mediaName: "Facebook",
-    bg: '#0044ff'
+    bg: "#0044ff",
   },
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
-    followers: "195+ Connections",
+    followers: "200+ Connections",
     link: "https://www.linkedin.com/in/hammadaslam10/",
     name: "Hammad Aslam",
     media: <LinkedIn />,
     class: "linkedinSVG",
     mediaName: "LinkedIn",
-    bg: '#0044ff'
+    bg: "#0044ff",
   },
   {
     handle: "hammadaslam308@gmail.com",
@@ -62,7 +74,7 @@ export const selfContact = [
     media: <Mail />,
     class: "gmailSVG",
     mediaName: "Gmail",
-    bg: '#c71610'
+    bg: "#c71610",
   },
   {
     handle: "@hammadaslam10",
@@ -73,7 +85,7 @@ export const selfContact = [
     media: <Discord />,
     class: "discordSVG",
     mediaName: "Discord",
-    bg: '#5b71c0'
+    bg: "#5b71c0",
   },
   {
     handle: "@hammadaslam_10",
@@ -84,7 +96,7 @@ export const selfContact = [
     media: <Twitter />,
     class: "twitterSVG",
     mediaName: "Twitter",
-    bg: '#326ada'
+    bg: "#326ada",
   },
   {
     handle: "@hammadaslam10",
@@ -95,6 +107,6 @@ export const selfContact = [
     media: <Whatsapp />,
     class: "whatsappSVG",
     mediaName: "WhatsApp",
-    bg: '#25d366'
+    bg: "#25d366",
   },
 ];
