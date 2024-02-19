@@ -46,7 +46,7 @@ export const selfContact = [
   {
     handle: "@hammadaslam101",
     imageSrc: HAMMAD,
-    followers: "600+ Followers",
+    followers: "570+ Followers",
     link: "https://web.facebook.com/hammadaslam101",
     name: "حماد راجپوت",
     media: <Facebook size={65} />,
