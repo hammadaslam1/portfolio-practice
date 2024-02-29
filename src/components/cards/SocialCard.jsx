@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 // import Instagram from "../assets/svg/Instagram";
-import { useRef } from "react";
 import "./socialcard.css";
 const SocialCard = (props) => {
   const handleClick = (link) => {
@@ -28,13 +27,13 @@ const SocialCard = (props) => {
               <button
                 class="name"
                 onClick={() => handleClick(props.link)}
-                style={{ color: "#fff", fontWeight: 500, fontSize: '14pt' }}
+                style={{ color: "#fff", fontWeight: 500, fontSize: "14pt" }}
               >
                 {props.handle}
               </button>
             </div>
           </div>
-          <div style={{display: 'flex'}}>
+          <div style={{ display: "flex" }}>
             <div style={{ flex: 1 }}></div>
             <div class="followers">{props.followers}</div>
           </div>

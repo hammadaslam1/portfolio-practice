@@ -8,6 +8,7 @@ import Mail from "../assets/svg/Mail";
 import Whatsapp from "../assets/svg/Whatsapp";
 import HAMMAD from "../assets/profile/hammad.jpg";
 import Fiverr from "../assets/svg/Fiverr";
+import HackerRank from "../assets/svg/HackerRank";
 
 export const selfContact = [
   {
@@ -57,7 +58,7 @@ export const selfContact = [
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
-    followers: "215+ Connections",
+    followers: "240+ Connections",
     link: "https://www.linkedin.com/in/hammadaslam10/",
     name: "Hammad Aslam",
     media: <LinkedIn />,
@@ -86,6 +87,17 @@ export const selfContact = [
     class: "discordSVG",
     mediaName: "Discord",
     bg: "#5b71c0",
+  },
+  {
+    handle: "@hammadaslam10",
+    imageSrc: HAMMAD,
+    followers: "",
+    link: "https://www.hackerrank.com/profile/hammadaslam10",
+    name: "Hammad Aslam",
+    media: <HackerRank />,
+    class: "hackerSVG",
+    mediaName: "HackerRank",
+    bg: "#2ec866",
   },
   {
     handle: "@hammadaslam_10",

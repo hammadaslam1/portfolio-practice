@@ -10,19 +10,19 @@ export const SkillCSS = {
     display: "flex",
     flexDirection: "column",
   },
-  h2:{
-    color: '#112d4e',
-    fontSize: '22pt'
+  h2: {
+    color: "#112d4e",
+    fontSize: "22pt",
   },
-  lang:{
-    fontSize: '16pt',
-    color: '#112d4e',
-    fontWeight: 'bold',
+  lang: {
+    fontSize: "16pt",
+    color: "#112d4e",
+    fontWeight: "bold",
   },
   icons: {
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   iconInternal: {
     display: "flex",
@@ -37,12 +37,10 @@ export const SkillCSS = {
     padding: "20px",
     borderRadius: "10px",
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+    marginBottom: "10px",
   },
 
   h3: {
-    marginBottom: "10px",
-  },
-  skillItem: {
     marginBottom: "10px",
   },
 
