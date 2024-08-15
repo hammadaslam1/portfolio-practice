@@ -7,8 +7,6 @@ import "../styles/global.css";
 import { useEffect, useState } from "react";
 import { SkillCSS } from "../styles/SkillCSS";
 import { shortTech } from "../components/data/SkillsData";
-// import { ABOUT, CONTACT, HOME, PROJECTS, SKILLS } from "../../router/Routes";
-// import "./Home.css"; // Import CSS for styling
 
 const Home = () => {
   const [hovered, setHovered] = useState(false);
@@ -26,15 +24,15 @@ const Home = () => {
       {/* <div style={HomeCSS.overlay}></div> */}
       <h1 className="pageTitle">Hammad Aslam</h1>
       <p>
-        Web Developer <span className="highlight">|</span> Android Developer
+        MERN Stack Developer <span className="highlight">|</span> Next JS Developer <span className="highlight">|</span> Python
       </p>
       {/* Add an image or background here */}
 
       <section style={HomeCSS.about}>
         <h2 style={HomeCSS.h2}>About Me</h2>
         <p>
-          An enthusiastic frontend developer who delights in fashioning
-          user-friendly interfaces and captivating web experiences.
+          An enthusiastic MERN stack developer who delights in fashioning
+          user-friendly web apps and captivating web experiences.
         </p>
       </section>
 
