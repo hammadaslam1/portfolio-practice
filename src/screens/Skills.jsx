@@ -3,9 +3,8 @@ import { frameworks, languages } from "../components/data/SkillsData";
 import { SkillCSS } from "../styles/SkillCSS";
 
 const Skills = () => {
+  window.scrollTo(0, 0);
   useEffect(() => {
-    // Scroll to the top when the component mounts
-    window.scrollTo(0, 0);
   }, []);
   return (
     <div style={SkillCSS.skillContainer}>

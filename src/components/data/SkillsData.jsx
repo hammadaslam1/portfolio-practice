@@ -10,20 +10,22 @@ import ReactIcon from "../assets/svg/React";
 import NodeJS from "../assets/svg/NodeJS";
 import Android from "../assets/svg/Android";
 import Laravel from "../assets/svg/Laravel";
+import Nextjs from "../assets/svg/Nextjs";
+import Express from "../assets/svg/Express";
 
 export const languages = [
-  {
-    icon: <C height={90} />,
-    name: "C",
-  },
-  {
-    icon: <Cplus height={90} />,
-    name: "C++",
-  },
-  {
-    icon: <Csharp height={90} />,
-    name: "C#",
-  },
+  // {
+  //   icon: <C height={90} />,
+  //   name: "C",
+  // },
+  // {
+  //   icon: <Cplus height={90} />,
+  //   name: "C++",
+  // },
+  // {
+  //   icon: <Csharp height={90} />,
+  //   name: "C#",
+  // },
   {
     icon: <JavaScript height={90} />,
     name: "JavaScript",
@@ -32,7 +34,6 @@ export const languages = [
     icon: <Kotlin height={90} />,
     name: "Kotlin",
   },
-
   {
     icon: <Python height={90} />,
     name: "Python",
@@ -68,8 +69,16 @@ export const shortTech = [
 
 export const frameworks = [
   {
+    icon: <Express height={100} />,
+    name: "Express JS",
+  },
+  {
     icon: <ReactIcon height={100} />,
     name: "React",
+  },
+  {
+    icon: <Nextjs height={100} />,
+    name: "Next JS",
   },
   {
     icon: <NodeJS height={100} />,
