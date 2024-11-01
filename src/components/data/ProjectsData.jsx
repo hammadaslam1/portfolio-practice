@@ -28,7 +28,7 @@ export const projectsRow = [
   ),
   createRows(
     "OpinioMine",
-    "A system that analyzes the customer reviews and classify them on the basis of fakeness, sentiments, topics and context (Not completed yet)",
+    "A system (for my BSIT Capstone Project) that analyzes the customer reviews and classify them on the basis of topics, sentiments and helpfulness",
     ["GitHub"],
     ["Python", "Flask", "JavaScript", "React JS"],
     [

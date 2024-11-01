@@ -14,7 +14,7 @@ export const selfContact = [
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
-    followers: "2 Gigs",
+    followers: "3 Gigs",
     link: "https://www.fiverr.com/hammadaslam10",
     name: "Hammad Aslam",
     media: <Fiverr />,
@@ -36,7 +36,7 @@ export const selfContact = [
   {
     handle: "@hammadaslam1",
     imageSrc: HAMMAD,
-    followers: "20 Repositories",
+    followers: "30+ Repositories",
     link: "https://github.com/hammadaslam1",
     name: "Hammad Aslam",
     media: <Github size={50} />,
@@ -47,7 +47,7 @@ export const selfContact = [
   {
     handle: "@hammadaslam101",
     imageSrc: HAMMAD,
-    followers: "570+ Followers",
+    followers: "600+ Followers",
     link: "https://web.facebook.com/hammadaslam101",
     name: "حماد راجپوت",
     media: <Facebook size={65} />,
@@ -58,7 +58,7 @@ export const selfContact = [
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
-    followers: "240+ Connections",
+    followers: "700+ Connections",
     link: "https://www.linkedin.com/in/hammadaslam10/",
     name: "Hammad Aslam",
     media: <LinkedIn />,
@@ -80,7 +80,7 @@ export const selfContact = [
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
-    followers: "2 Channels",
+    followers: "",
     link: "https://discordapp.com/users/1061504929681911879",
     name: "Hammad Aslam",
     media: <Discord />,
