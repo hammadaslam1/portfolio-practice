@@ -9,8 +9,20 @@ import Whatsapp from "../assets/svg/Whatsapp";
 import HAMMAD from "../assets/profile/hammad.jpg";
 import Fiverr from "../assets/svg/Fiverr";
 import HackerRank from "../assets/svg/HackerRank";
+import Upwork from "../assets/svg/Upwork";
 
 export const selfContact = [
+  {
+    handle: "@hammadaslam10",
+    imageSrc: HAMMAD,
+    followers: "2 Profiles",
+    link: "https://upwork.com/freelancers/~01e0a51cb5c5d9544b",
+    name: "Hammad Aslam",
+    media: <Upwork />,
+    class: "upworkSVG",
+    mediaName: "Upwork",
+    bg: "#43be13",
+  },
   {
     handle: "@hammadaslam10",
     imageSrc: HAMMAD,
