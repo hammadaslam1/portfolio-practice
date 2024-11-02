@@ -12,16 +12,20 @@ import Android from "../assets/svg/Android";
 import Laravel from "../assets/svg/Laravel";
 import Nextjs from "../assets/svg/Nextjs";
 import Express from "../assets/svg/Express";
+import Mysql from "../assets/svg/Mysql";
+import Mongodb from "../assets/svg/Mongodb";
+import Firebase from "../assets/svg/Firebase";
+import Prisma from "../assets/svg/Prisma";
 
 export const languages = [
   // {
   //   icon: <C height={90} />,
   //   name: "C",
   // },
-  // {
-  //   icon: <Cplus height={90} />,
-  //   name: "C++",
-  // },
+  {
+    icon: <Cplus height={90} />,
+    name: "C++",
+  },
   // {
   //   icon: <Csharp height={90} />,
   //   name: "C#",
@@ -30,10 +34,10 @@ export const languages = [
     icon: <JavaScript height={90} />,
     name: "JavaScript",
   },
-  {
-    icon: <Kotlin height={90} />,
-    name: "Kotlin",
-  },
+  // {
+  //   icon: <Kotlin height={90} />,
+  //   name: "Kotlin",
+  // },
   {
     icon: <Python height={90} />,
     name: "Python",
@@ -93,3 +97,26 @@ export const frameworks = [
     name: "Laravel",
   },
 ];
+
+export const databases = [
+  {
+    icon: <Mysql height={100} />,
+    name: "MySQL",
+  },
+  {
+    icon: <Mongodb height={100} />,
+    name: "MongoDB",
+  },
+  {
+    icon: <Firebase height={100} />,
+    name: "Firebase FireStore",
+  },
+  {
+    icon: <Prisma height={100} />,
+    name: "Prisma ORM",
+  },
+  // {
+  //   icon: <PostgreSQL height={100} />,
+  //   name: "PostgreSQL",
+  // },
+]
