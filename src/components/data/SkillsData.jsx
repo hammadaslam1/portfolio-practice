@@ -1,11 +1,8 @@
 import JavaScript from "../assets/svg/JavaScript";
-import Kotlin from "../assets/svg/Kotlin";
 import Python from "../assets/svg/Python";
 import PHP from "../assets/svg/PHP";
 import SQL from "../assets/svg/SQL";
-import Csharp from "../assets/svg/Csharp";
 import Cplus from "../assets/svg/Cplus";
-import C from "../assets/svg/C";
 import ReactIcon from "../assets/svg/React";
 import NodeJS from "../assets/svg/NodeJS";
 import Android from "../assets/svg/Android";
@@ -54,8 +51,8 @@ export const languages = [
 
 export const shortTech = [
   {
-    icon: <JavaScript height={90} />,
-    name: "JavaScript",
+    icon: <Express height={90} />,
+    name: "Express JS",
   },
   {
     icon: <ReactIcon height={90} />,
@@ -119,4 +116,4 @@ export const databases = [
   //   icon: <PostgreSQL height={100} />,
   //   name: "PostgreSQL",
   // },
-]
+];
