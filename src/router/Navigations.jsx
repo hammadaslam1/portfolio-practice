@@ -7,7 +7,8 @@ import Contact from "../screens/Contact";
 import Navbar from "../components/navbar/Navbar";
 import Skills from "../screens/Skills";
 import Footer from "../components/footer/Footer";
-import '../styles/global.css'
+import "../styles/global.css";
+import ChatappAdmin from "../components/assets/svg/ChatappAdmin";
 
 const Navigations = () => {
   return (
@@ -20,6 +21,7 @@ const Navigations = () => {
           <Route path={PROJECTS} element={<Projects />} />
           <Route path={SKILLS} element={<Skills />} />
           <Route path={CONTACT} element={<Contact />} />
+          {/* <Route path={'sample'} element={<ChatappAdmin />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

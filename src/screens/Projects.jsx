@@ -20,6 +20,7 @@ const Projects = () => {
             languages={data.languages}
             link={data.link}
             image={data.image}
+            picture={data.picture}
           />
         ))}
       </div>

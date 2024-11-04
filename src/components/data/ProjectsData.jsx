@@ -7,6 +7,8 @@ import todoReact from "../assets/projectImages/todo-react.png";
 import swiftSwap from "../assets/projectImages/swift-swap.png";
 import calculator from "../assets/projectImages/calculator.png";
 import hammad from "../assets/projectImages/hammad.png";
+import chatappAdmin from "../assets/projectImages/chatappAdmin.png";
+import whatsapp from "../assets/projectImages/whatsapp.png";
 
 // import image from '../'
 
@@ -15,6 +17,28 @@ const createRows = (title, description, buttons, languages, link, image) => {
 };
 
 export const projectsRow = [
+  createRows(
+    "Chatapp (Admin/Users)",
+    "Web based Chat App developed for communication between admin and multiple users in Next JS",
+    ["GitHub", "Live"],
+    ["Next JS", "Socket.io", "MySQL", "Prisma"],
+    [
+      "https://github.com/hammadaslam1/Maaz-Informatics-Apprenticeship/tree/main/chatapp_admin_user",
+      "https://hammad-chat-next.vercel.app/",
+    ],
+    chatappAdmin
+  ),
+  createRows(
+    "Whatsapp Clone",
+    "Web based Chat App developed for communication between multiple users in MERN Stack",
+    ["GitHub"],
+    ["React JS", "Socket.io", "Express", "MongoDB"],
+    [
+      "https://github.com/hammadaslam1/Maaz-Informatics-Apprenticeship/tree/main/chatapp_multiple_users",
+      // "https://hammad-chat-next.vercel.app/",
+    ],
+    whatsapp
+  ),
   createRows(
     "Hammad Aslam",
     "My Portfolio developed in React JS using Materialized components",
